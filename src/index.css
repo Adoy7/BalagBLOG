@@ -1,8 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-eggplant;
+  }
+  p {
+    @apply text-eggplant;
+  }
+}
+
+@font-face {
+  font-family: 'DIN Next W1G';
+  src: url('../public/assets/fonts/dinnextw1g.otf') format('otf');
+  src: url('../public/assets/fonts/dinnextw1g_bold.otf') format('otf');
+  src: url('../public/assets/fonts/dinnextw1g_medium.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #F7F3F5;
+  /* display: grid;
+  margin-inline: 190px; */
+  font-family: 'DIN Next W1G', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
